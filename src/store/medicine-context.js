@@ -2,7 +2,7 @@ import React from "react";
 
 const MedicineContext = React.createContext({
   medicines: [],
-  addMedicines: () => {},
+  addMedicines: (med) => {},
 });
 
 export default MedicineContext;

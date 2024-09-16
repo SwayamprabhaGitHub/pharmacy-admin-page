@@ -3,10 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import MedicineContextProvider from "./store/medicineProvider";
+import CartContextProvider from "./store/cartContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <MedicineContextProvider>
-    <App />
-  </MedicineContextProvider>
+  <CartContextProvider>
+    <MedicineContextProvider>
+      <App />
+    </MedicineContextProvider>
+  </CartContextProvider>
 );

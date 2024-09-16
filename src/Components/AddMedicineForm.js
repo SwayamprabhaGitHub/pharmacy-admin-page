@@ -21,6 +21,11 @@ const AddMedicineForm = () => {
     };
 
     mdcnCnxt.addMedicines(medicine);
+
+    medicineNameInputRef.current.value = "";
+    medicineDesInputRef.current.value = "";
+    medicinePriceInputRef.current.value = "";
+
   };
   return (
     <form onSubmit={formSubmitHandler}>
